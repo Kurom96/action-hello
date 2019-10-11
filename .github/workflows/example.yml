@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: Kurom96/action-hello@v1
+      uses: Kurom96/action-hello@master
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
