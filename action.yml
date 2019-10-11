@@ -1,0 +1,13 @@
+name: 'Hello Action'
+description: 'Say Hello and time'
+inputs:
+  who-to-greet:
+    description: 'who to greet'
+    required: true
+    default: 'Hoge'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'

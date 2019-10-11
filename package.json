@@ -1,0 +1,26 @@
+{
+  "name": "action-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kurom96/action-hello.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kurom96/action-hello/issues"
+  },
+  "homepage": "https://github.com/Kurom96/action-hello#readme",
+  "dependencies": {
+    "@actions/core": "^1.1.3",
+    "@actions/github": "^1.1.0",
+    "@zeit/ncc": "^0.20.5"
+  }
+}
