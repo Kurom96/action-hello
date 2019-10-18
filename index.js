@@ -9,7 +9,7 @@ try {
 
     const d = new Date();
     const zd = tz.convertToTimeZone(d, { timeZone: 'Asia/Tokyo' });
-    const time = format(zd, 'YYYY/MM/DD HH:mm:ss.sss', { locale: ja });
+    const time = format(zd, 'yyyy/MM/dd HH:mm:ss.SSS', { locale: ja });
     core.setOutput('time', time);
 } catch (error) {
     core.setFailed(error.message);
