@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hoge
-      uses: Kurom96/action-hello@v1
+      uses: Kurom96/action-hello@test
       with:
         your-name: '太郎'
     - name: Get the output time
