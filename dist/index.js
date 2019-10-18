@@ -855,8 +855,10 @@ try {
     const d = new Date();
     const zd = tz.convertToTimeZone(d, { timeZone: 'Asia/Tokyo' });
     const time = format(zd, 'yyyy/MM/dd HH:mm:ss.SSS', { locale: ja });
-    core.setSecret(time);
     core.setOutput('time', time);
+
+    core.setSecret('MyPassword');
+    console.log('このMyPasswordはテストです。');
 } catch (error) {
     core.setFailed(error.message);
 }
