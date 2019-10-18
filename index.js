@@ -1,10 +1,15 @@
 const core = require('@actions/core');
+const format = require('date-fns/format');
+const ja = require('date-fns/locale/ja');
+const tz = require('date-fns-timezone')
 
 try {
     const nameToGreet = core.getInput('your-name');
     console.log(`こんにちは、${nameToGreet}さん`);
 
-    const time = (new Date()).toTimeString();
+    const d = new Date();
+    const zd = tz.convertToTimeZone(d, { timeZone: 'Asia/Tokyo' });
+    const time = format(zd, 'YYYY/MM/DD HH:mm:ss.sss', { locale: ja });
     core.setOutput('time', time);
 } catch (error) {
     core.setFailed(error.message);
