@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/Kurom96/action-hello/workflows/example/badge.svg)](https://github.com/Kurom96/action-hello/actions)
+
 # Hello world javascript action
 
 This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
