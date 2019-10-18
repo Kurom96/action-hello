@@ -1,13 +1,13 @@
-name: 'Hello Action'
-description: 'Say Hello and time'
+name: 'Hello World'
+description: '挨拶します。時間を記録します。'
 inputs:
-  who-to-greet:
-    description: 'who to greet'
+  your-name:
+    description: 'あなたの名前'
     required: true
-    default: 'Hoge'
+    default: 'someone'
 outputs:
   time:
-    description: 'The time we greeted you'
+    description: '挨拶した時間'
 runs:
   using: 'node12'
   main: 'dist/index.js'

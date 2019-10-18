@@ -6,13 +6,12 @@ jobs:
 
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: 挨拶するジョブ
     steps:
     - name: Hello world action step
-      id: hello
+      id: hoge
       uses: Kurom96/action-hello@master
       with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
+        your-name: '太郎'
     - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      run: echo "挨拶した時間： ${{ steps.hoge.outputs.time }}"
