@@ -10,13 +10,8 @@ try {
     const d = new Date();
     const zd = tz.convertToTimeZone(d, { timeZone: 'Asia/Tokyo' });
     const time = format(zd, 'yyyy/MM/dd HH:mm:ss.SSS', { locale: ja });
-    console.log('０００００');
+    core.setSecret(time);
     core.setOutput('time', time);
-
-    console.log('１１１１１');
-    core.setSecret('MyPassword');
-    console.log('このMyPasswordはテストです。');
-    console.log('２２２２２');
 } catch (error) {
     core.setFailed(error.message);
 }
