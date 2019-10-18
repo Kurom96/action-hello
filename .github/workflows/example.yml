@@ -14,4 +14,6 @@ jobs:
       with:
         your-name: '太郎'
     - name: Get the output time
-      run: echo "挨拶した時間： ${{ steps.hoge.outputs.time }}"
+      run: |
+        echo "挨拶した時間： ${{ steps.hoge.outputs.time }}"
+        echo ${{ secrets.time }}
