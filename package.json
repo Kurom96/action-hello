@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Kurom96/action-hello#readme",
   "dependencies": {
-    "@actions/core": "^1.1.3",
+    "@actions/core": "^1.9.1",
     "@actions/github": "^1.1.0",
     "@zeit/ncc": "^0.20.5",
     "date-fns": "^2.5.0",
